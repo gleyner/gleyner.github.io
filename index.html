@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body class="grid-container">
+    
+    <header class="header" id="header">
+        
+        <div>
+            <div class="container">
+                <img src="./logo.png" alt="Logo">
+                
+            </div>
+            <h1 class="titulo">UNIVERSIDAD DEL MAGDALENA</h1>
+    </div>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#presentacion">Presentación</a></li>
+            <li><a href="#Experiencia">Experiencia</a></li>
+            <li><a href="#expe">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          
+        </ul>
+    </nav>
+        </header>
+
+    
+    <aside class="sidebar" id="sidebar">
+        <h1>GLEYNER OSPINO ALVAREZ</h1>
+            <div class="containerusuario"> 
+                <img src="./2017214059.png" alt="Logo">    
+            </div>
+            <div class="descripcion">
+              <p>
+                Soy estudiante de ingenieria de sistemas
+                residente en la ciudad de santa marta,
+                actualmente tengo 23 años.
+              </p>
+              <br>
+              <a href="https://www.facebook.com/eslatoyde" target="_blank" class="contactar">
+                <i class="fa-brands fa-facebook"> </i>
+                Contactame
+            </a>
+               
+    </aside>
+
+
+
+    <article class="main" id="main">
+        
+        <section class="Presentacion" id="presentacion">
+            <div class="presentacion_cuerpo">
+                <h2 class="presentaciontitulo">Presentación
+                    
+                </h2>
+                <div>
+                    <img src="./entrada.jpeg" alt="iicio" class="imagencentro">  
+                </div>
+                
+                <div class="presentacion-grid">
+                    <div class="presentaciontexto">
+                        <p>
+                            Hola, mi nombre es gleyner ospino soy estudiante de ingeniería de sistemas cursando actualmente 10 semestre, en la universidad 
+                            del magdalena, soy de la ciudad de santa marta. Tengo 23 años, la foto que observaron en la presentación es de mi primer semestre en el cual 
+                            se me dio la oportunidad de ingresar al alma mater, si bien un poco la sonrisa representa la felicidad que sentía en ese momento, es una de las mejores 
+                            oportunidades que he tenido, permitiéndome madurar en varios aspectos de mi vida. 
+                            y siendo este un camino más que recorrer en la vida, mi mayor meta actualmente es graduarme para así primero agradecer a todas esas personas que
+                             estuvieron involucradas en este largo camino.
+            
+                        </p>
+                    </div>
+                </div>
+            </div>
+             <!-- <img src="./wave.svg" alt="division2" class="wave2">  -->
+        </section>
+        <div>
+            <img src="./wave.svg" alt="wave" class="waveimg">
+        </div>
+        
+        <section class="Experiencia" id="Experiencia"> 
+            <!--  -->
+            <div class="Experiencia_cuerpo">
+                <h2 class="Experienciatitulo">Experiecia/Expectativa</h2>
+                <div class="Experiencia-grid">
+                    <div class="Experiencia_">
+                        <div class="expectativa_descripcion"></div>
+                        <h1 class="parte1">
+                            ⚪ Conseguir mi titulo de ingeniero de sistemas 
+                        </h1>
+                        <span class="mostrar_mas" id="mostrar_m">
+                            <h1 class="parte2">
+                                ⚪ Conseguir un empleo en el cual pueda ejercer 
+                            </h1>
+                            <h1 class="parte3">
+                                ⚪ Pertener a grupos de desarrollo importantes
+                            </h1>
+                            <h1 class="parte4">
+                                ⚪ Trabajar para alguna multinacional microsoft, apple etc
+                            </h1>
+                        </span>
+                    <button class="btn-fo" id="mostrar_m_btn">Mostrar más</button>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+             <img src="./wave.svg" alt="division2" class="wave2"> 
+            </div>
+        </section>
+
+ <!--  -->
+ 
+    <section class="experienciax" id="expe">
+        <div class="center">
+            <h1 class="experiencia-p">Habilidades</h1>
+           <div class="progress">
+            <br>
+            <br>
+           <div class="progress">
+           <p>HTML</p>
+               <progress id="php" max="100" value="50"></progress>
+               <span></span>
+           </div>
+           <br>
+           <br>
+           <div class="clear"></div>
+           <div class="progress">
+           <p>CSS</p>
+               <progress id="css" max="100" value="40"></progress>
+               <span></span>
+           </div>
+           <br>
+           <br>   
+           <div class="progress">
+           <p>Javascript</p>
+               <progress id="javascript" max="100" value="79"></progress>
+               <span></span>
+           </div>
+           <br>
+           <br>
+           <div class="progress">
+           <p>Node.js</p>
+               <progress id="nodejs" max="100" value="36"></progress>
+               <span></span>
+           </div>
+           <br>
+           <br>
+           <!-- <input type="button" id="boton" value="Reload" /> -->
+       </div>
+       
+       <script type="text/javascript"> 
+    //    voy a meter esto por falta de tiempo aqui pero va en el js
+       window.onload = function() { 
+           
+           animateprogress("#html5",91);
+           animateprogress("#php",72);
+           animateprogress("#css",86);
+           animateprogress("#python",52);
+           animateprogress("#javascript",79);
+           animateprogress("#nodejs",36);
+           
+       } 	
+       document.querySelector ("#boton").addEventListener ("click", function() { 
+           animateprogress("#html5",91);
+           animateprogress("#php",72);
+           animateprogress("#css",86);
+           animateprogress("#python",52);
+           animateprogress("#javascript",79);
+           animateprogress("#nodejs",36);
+       
+       });
+       </script>
+       <script src="/animateprogress.js"></script>
+    </section>
+
+		
+		
+
+
+ 
+  
+ <!--  -->
+ <br>
+ <br>
+ <br>
+
+        <section class="Contacto" id="contacto">
+            <div class="container-from">
+                <div class="info-from">
+                    <h2 class="contact">Contactame</h2>
+                    <p>
+                        Rellena el siguiente formulario y pronto me pondre en contacto con usted                        
+                    </p>
+                  
+                </div>
+                
+                <form action="#" autocomplete="off" class="formu" >
+                   
+                    <br>
+                    
+                    <input type="text" name="Asunto"  class="asunto" id="Asunto" placeholder="Asunto">
+                    <br>
+                <br>
+                <input type="text" name="Correo" 
+                 class="correo" id="Correo" placeholder="Correo electronico" >
+                 <br>
+                <br>
+                <textarea name="Mensaje" placeholder="Ingresa tu mensaje"  class="mensaje" id="Mensaje" rows="6" cols="20">
+
+                </textarea>
+                <br>
+
+
+                <br>
+                <button class="btn-fo " id="botonformulario" >
+                    enviar
+                </button>
+                <br>
+               
+                </form>
+
+                <!-- <form action="#" autocomplete="off">
+                    <button class="btn-envia" >
+                        Enviar
+                    </button>
+                </form>
+                <input type="text" name="Asunto" required
+                placeholder="Asunto"
+                class="campo">
+                <input type="Email" name="Email" placeholder="Ingresa tu correo"
+                class="campo">
+                <textarea name="Mensaje" placeholder="Ingresa tu mensaje"></textarea> -->
+               
+                  
+                
+                
+                <!-- <input type="submit" name="enviar"
+                value="Enviar mensaje" class="btn-enviar"> -->
+            </div>
+
+        </section>
+        </article>
+
+    <footer class="footer">
+        <div class="footer-content">
+            
+         <a href="https://www.facebook.com/eslatoyde" target="_blank"><img src="./FacebookBlanco.png" alt="" class="icons"></a>  
+         <a href="https://www.instagram.com/gleynerospino/" target="_blank"><img src="./InstagramBlanco.png" alt="" class="icons"></a>   
+         <a href="https://twitter.com/GleynerOspino" target="_blank"><img src="./TwitterBlanco.png" alt="" class="icons"></a>   
+         <a href="socialredes"></a>    
+            
+        </div>
+        <div class="footer-a">
+            <p>
+                
+               
+            </p>
+            <p></p>
+            <p> </p>
+        </div>
+     
+        <!-- <ul class="footer-menu">
+            <li class="menu-item">Legal</li>
+            <li class="menu-item">Cookies</li>
+            <li class="menu-item">Privacy</li>
+            <li class="menu-item">Shipping</li>
+            <li class="menu-item">Refounds</li>
+
+        </ul> -->
+        <span class="copyringht">Correo: gleinerospinoalvarez@gmail.com</span>
+        <span class="copyringht">Tel: 301-722-72-26</span>
+        <span class="copyringht">Santa Marta, Colombia</span>
+        <span class="copyringht">&copy;2022,Gleyner ospino. All ringths reserved.</span>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"> </script>
+    <script src="https://kit.fontawesome.com/88cd79b60e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
